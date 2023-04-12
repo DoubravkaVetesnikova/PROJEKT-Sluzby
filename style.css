@@ -1,0 +1,155 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    min-width: 500px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.happytravels h1 {
+    font-size: 28px;
+    color: #000000;
+    font-weight: 500;
+    margin: 38px auto 10px auto;
+}
+
+.happytravels hr {
+    background-color: #407BFF;
+    max-width: 60px;
+    height: 2px;
+    border: none;
+}
+
+.happytravels p {
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 30px auto 30px auto;
+    max-width: 460px;
+}
+
+.button {
+    margin: 10px auto 10px auto;
+}
+
+.adventure,
+.beach { 
+    padding: 11px 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    background-color: #8B8B8B;
+    border-radius: 20px;
+    border: none;
+}
+
+.adventure:hover, 
+.beach:hover {
+    background-color: #407BFF;
+}
+
+.section1,
+.section2,
+.section3 {
+    margin: 60px auto 30px auto;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.text {
+    color: #8B8B8B;
+    font-size: 16px;
+    max-width: 460px;
+    margin: 15px auto 30px auto;
+}
+
+.service {
+    max-width: 460px;
+    padding: 20px;
+    display: flex;
+    margin: 15px auto 15px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    justify-content: space-around;
+    box-shadow: 0px 4px 6px #407BFF1F;
+}
+
+.service p {
+    color: #8B8B8B;
+    font-size: 13px;
+    font-weight: 300;
+    flex: 0 0 75%;
+    text-align: left;
+}
+
+.service img {
+    flex: 0 0 25%;
+    max-width: 50px;
+}
+
+.box {
+    margin: 30px auto 60px auto;
+}
+
+@media screen and (min-width: 640px) {
+    
+    .container {
+        min-width: 640px;
+        max-width: 1100px;
+    }
+
+    .traveler img {
+        max-width: 400px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .button {
+        margin: 0;
+    }
+    
+    .box {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .service { 
+        display: block;
+        flex: 1 1 230px;
+        text-align: center;
+    }
+
+    .service img {
+        align-self: center;
+    }
+
+    .service p {
+        min-width: auto;
+        text-align: center;
+    }
+
+    .text {
+        min-width: 550px;
+    }
+}
+
+
+
+
