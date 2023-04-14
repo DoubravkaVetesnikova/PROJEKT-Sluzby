@@ -8,16 +8,14 @@ body {
 }
 
 .container {
-    min-width: 500px;
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
 }
 
 .happytravels h1 {
     font-size: 28px;
-    color: #000000;
     font-weight: 500;
     margin: 38px auto 10px auto;
 }
@@ -46,6 +44,7 @@ body {
     padding: 11px 30px;
     color: #FFFFFF;
     font-size: 14px;
+    font-weight: 400;
     background-color: #8B8B8B;
     border-radius: 20px;
     border: none;
@@ -104,14 +103,12 @@ h2 {
 }
 
 @media screen and (min-width: 640px) {
-    
     .container {
-        min-width: 640px;
-        max-width: 1100px;
+        padding: 0 20px;
     }
 
     .traveler img {
-        max-width: 400px;
+        min-width: 400px;
     }
 
     .buttons {
@@ -150,6 +147,91 @@ h2 {
     }
 }
 
+@media screen and (min-width: 1100px) {
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        text-align: left;
+        gap: 80px;
+        padding: 0;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1040px;
+        gap: 60px;
+    }
+
+    .traveler {
+        max-width: 490px;
+    }
+
+    .traveler img {
+        min-width: 425px;
+        text-align: center;
+    }
+
+    .happytravels {
+        min-width: 490px;
+    }
+
+    .happytravels p {
+        margin: 40px 0 40px 0;
+    }
+
+    .section2 {
+        max-width: 1040px;
+        gap: 60px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .box {
+        min-width: 550px;
+        margin: 0;
+    }
+
+    .services,
+    .delegates {
+        padding-top: 40px;
+        min-width: 430px;
+    }
+
+    .section3 {
+        max-width: 1040px;
+        display: flex;
+        gap: 60px;
+    }
+
+    .happytravels hr {
+        margin-left: 0;
+    }
+
+    .buttons {
+        justify-content: flex-start;
+    }
+
+    .text {
+        min-width: 450px;
+    }
+
+    .service {
+        min-width: 170px;
+        padding: 40px 15px;
+    }
+
+    .service img {
+        max-width: 40px;
+    }
+
+    .service p {
+        max-width: 140px;
+    }
+
+}
 
 
 
